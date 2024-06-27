@@ -1,0 +1,142 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="670"
+        x:Class="GabrielShop.RedactWindow"
+		x:CompileBindings ="False"
+        Title="Редактирование товара"
+		MaxWidth="500" MaxHeight="670"
+		MinWidth="500" MinHeight="670">
+		<WrapPanel
+			Orientation="Vertical">
+			<Image
+				x:Name="redImage"
+				Margin="20 5"
+				Width="150"
+				Height="125"
+				HorizontalAlignment="Center">
+			</Image>
+			<TextBlock
+				x:Name="redSource"
+				Margin="20 5"
+				FontSize="20"
+				HorizontalAlignment="Center">
+			</TextBlock>
+			<Button
+				Click="SelectImage"
+				Content="Обзор"
+				Margin="20 5"
+				FontSize="20"
+				HorizontalAlignment="Center">
+			</Button>
+			<WrapPanel
+				Margin="0 10 0 0">
+				<TextBlock
+					Text="Наименование:"
+					Margin="20 10 0 0"
+					FontSize="20"
+					TextWrapping="Wrap"/>
+				<TextBox
+					x:Name="redName"
+					Margin="5"
+					FontSize="20"
+					TextWrapping="Wrap"/>
+			</WrapPanel>
+			<WrapPanel
+				Margin="0 10 0 0">
+				<TextBlock
+					Text="Категория:"
+					Margin="20 10 0 0"
+					FontSize="20"
+					TextWrapping="Wrap"/>
+				<ComboBox
+					x:Name="redCat"
+					Grid.Column="3"
+					Margin="5"
+					FontSize="20"
+					HorizontalAlignment="Center">
+					<ComboBoxItem>Категория</ComboBoxItem>
+					<ComboBoxItem>Коты</ComboBoxItem>
+					<ComboBoxItem>Не коты</ComboBoxItem>
+				</ComboBox>
+			</WrapPanel>
+			<WrapPanel>
+				<TextBlock
+					Text="Описание:"
+					Margin="20 10 0 0"
+					FontSize="20"
+					TextWrapping="Wrap"/>
+				<TextBox
+					x:Name="redDescr"
+					Margin="5"
+					FontSize="20"
+					TextWrapping="Wrap"/>
+			</WrapPanel>
+			<WrapPanel>
+				<TextBlock
+					Text="Производитель:"
+					Margin="20 10 0 0"
+					FontSize="20"
+					TextWrapping="Wrap"/>
+				<ComboBox
+					x:Name="redMan"
+					Grid.Column="3"
+					Margin="5"
+					FontSize="20"
+					HorizontalAlignment="Center">
+					<ComboBoxItem>Производитель</ComboBoxItem>
+					<ComboBoxItem>OOO 'Поставщик котов'</ComboBoxItem>
+					<ComboBoxItem>OOO 'ААА'</ComboBoxItem>
+					<ComboBoxItem>Неизвестен</ComboBoxItem>
+				</ComboBox>
+			</WrapPanel>
+			<WrapPanel>
+				<TextBlock
+					Text="На складе:"
+					Margin="20 10 0 0"
+					FontSize="20"
+					TextWrapping="Wrap"/>
+				<TextBox
+					x:Name="redEnable"
+					KeyUp="EnableRestr"
+					Margin="5"
+					FontSize="20"
+					TextWrapping="Wrap"/>
+			</WrapPanel>
+			<WrapPanel>
+				<TextBlock
+					Text="Цена:"
+					Margin="20 10 0 0"
+					FontSize="20"
+					TextWrapping="Wrap"/>
+				<TextBox
+					x:Name="redPrice"
+					KeyUp="PriceRestr"
+					Margin="5"
+					FontSize="20"/>
+			</WrapPanel>
+			<TextBlock
+				x:Name="redEx"
+				Text="Товар с таким наименованием уже существует"
+				IsVisible="false"
+				Foreground="Red"
+				Margin="20 5"
+				FontSize="20">
+			</TextBlock>
+			<Button
+				Click="Save"
+				Content="Сохранить"
+				Margin="20 10 20 5"
+				FontSize="20"
+				HorizontalAlignment="Right">
+			</Button>
+			<Button
+				Click="Cancel"
+				Content="Отмена"
+				Margin="20 5"
+				FontSize="20"
+				HorizontalAlignment="Right">
+			</Button>
+		</WrapPanel>
+</Window>

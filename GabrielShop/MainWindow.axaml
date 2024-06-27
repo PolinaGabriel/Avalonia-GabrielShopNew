@@ -1,0 +1,101 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="960" d:DesignHeight="560"
+        x:Class="GabrielShop.MainWindow"
+		x:CompileBindings="False"
+        Title="Вход"
+		MaxWidth="960" MaxHeight="560"
+		MinWidth="960" MinHeight="560">
+	<Grid
+		ColumnDefinitions="120 120 120 120 120 120 120 120"
+		RowDefinitions="180 200 180">
+		<StackPanel
+			Grid.Column="3"
+			Grid.Row="0"
+			Grid.ColumnSpan="2"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center">
+			<TextBlock
+				Text="Вход"
+				FontSize="25"
+				FontWeight="Bold"/>
+		</StackPanel>
+		<StackPanel
+			Grid.Column="1"
+			Grid.Row="1"
+			Grid.ColumnSpan="3"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top">
+			<TextBox
+				x:Name="login"
+				Watermark="Логин"
+				FontSize="30"
+				Width="360"/>
+		</StackPanel>
+		<StackPanel
+			Grid.Column="4"
+			Grid.Row="1"
+			Grid.ColumnSpan="3"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Top">
+			<TextBlock
+				x:Name="loginError"
+				Text="Логина нет в базе"
+				IsVisible="false"
+				Foreground="Red"
+				Margin="5"
+				FontSize="25"/>
+		</StackPanel>
+		<StackPanel
+			Grid.Column="1"
+			Grid.Row="1"
+			Grid.ColumnSpan="3"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center">
+			<TextBox
+				x:Name="password"
+				PasswordChar="*"
+				Watermark="Пароль"
+				FontSize="30"
+				Width="360"/>
+		</StackPanel>
+		<StackPanel
+			Grid.Column="4"
+			Grid.Row="1"
+			Grid.ColumnSpan="3"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center">
+			<TextBlock
+				x:Name="passwordError"
+				Text="Неверный пароль"
+				IsVisible="false"
+				Foreground="Red"
+				Margin="5"
+				FontSize="25"/>
+		</StackPanel>
+		<StackPanel
+			Grid.Column="3"
+			Grid.Row="2"
+			Grid.ColumnSpan="2"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Top">
+			<Button
+				Click="OpenShop"
+				Content="Войти"
+				FontSize="25"/>
+		</StackPanel>
+		<StackPanel
+			Grid.Column="3"
+			Grid.Row="2"
+			Grid.ColumnSpan="2"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center">
+			<Button
+				Click="OpenShopGuest"
+				Content="Войти как гость"
+				FontSize="25"/>
+		</StackPanel>
+	</Grid>
+</Window>

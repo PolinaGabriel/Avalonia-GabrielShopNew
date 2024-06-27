@@ -1,0 +1,102 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="670"
+        x:Class="GabrielShop.Adding"
+        Title="Добавление товара"
+		MaxWidth="500" MaxHeight="670"
+		MinWidth="500" MinHeight="670">
+	<WrapPanel
+		Orientation="Vertical">
+		<Image
+			x:Name="addImage"
+			Margin="20 5"
+			Width="150"
+			Height="125"
+			HorizontalAlignment="Center"/>
+		<TextBlock
+			x:Name="addSource"
+			Margin="20 5"
+			FontSize="20"
+			HorizontalAlignment="Center"/>
+		<Button
+			Click="SelectImage"
+			Content="Обзор"
+			Margin="20 5"
+			FontSize="20"
+			HorizontalAlignment="Center"/>
+		<TextBox
+			x:Name="addName"
+			Watermark="Наименование"
+			Margin="20 5"
+			FontSize="20"
+			TextWrapping="Wrap"/>
+		<ComboBox
+			x:Name="addCat"
+			Grid.Column="3"
+			SelectedIndex="0"
+			Margin="20 5"
+			FontSize="20"
+			HorizontalAlignment="Center">
+			<ComboBoxItem>Категория</ComboBoxItem>
+			<ComboBoxItem>Коты</ComboBoxItem>
+			<ComboBoxItem>Не коты</ComboBoxItem>
+		</ComboBox>
+		<TextBox
+			x:Name="addDescr"
+			Watermark="Описание"
+			Margin="20 5"
+			FontSize="20"
+			TextWrapping="Wrap"/>
+		<ComboBox
+			x:Name="addMan"
+			Grid.Column="3"
+			SelectedIndex="0"
+			Margin="5"
+			FontSize="20"
+			HorizontalAlignment="Center">
+			<ComboBoxItem>Производитель</ComboBoxItem>
+			<ComboBoxItem>OOO 'Поставщик котов'</ComboBoxItem>
+			<ComboBoxItem>OOO 'ААА'</ComboBoxItem>
+			<ComboBoxItem>Неизвестен</ComboBoxItem>
+		</ComboBox>
+		<TextBox
+			x:Name="addEnable"
+			Watermark="На складе"
+			KeyUp="EnableRestr"
+			Margin="20 5"
+			FontSize="20"
+			TextWrapping="Wrap"/>
+		<TextBox
+			x:Name="addPrice"
+			Watermark="Цена"
+			KeyUp="PriceRestr"
+			Margin="20 5"
+			FontSize="20"/>
+		<TextBlock
+			x:Name="addEx1"
+			Text="Товар с таким наименованием уже существует"
+			IsVisible="false"
+			Foreground="Red"
+			Margin="20 5"
+			FontSize="20"/>
+		<TextBlock
+			x:Name="addEx2"
+			Text="Все поля обязательны к заполнению"
+			IsVisible="false"
+			Foreground="Red"
+			Margin="20 5"
+			FontSize="20"/>
+		<Button
+			Click="Save"
+			Content="Сохранить"
+			Margin="20 10 20 5"
+			FontSize="20"/>
+		<Button
+			Click="Cancel"
+			Content="Отмена"
+			Margin="20 5"
+			FontSize="20"/>
+	</WrapPanel>
+</Window>

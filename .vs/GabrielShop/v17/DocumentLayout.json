@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\\u041C\u043E\u0434\u0443\u043B\u0438\\Avalonia\\GabrielShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0646F1CC-A6AB-44BD-B1C3-1F810A7342DE}|GabrielShop\\GabrielShop.csproj|e:\\\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\\u043C\u043E\u0434\u0443\u043B\u0438\\avalonia\\gabrielshop\\gabrielshop\\adminlist.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0646F1CC-A6AB-44BD-B1C3-1F810A7342DE}|GabrielShop\\GabrielShop.csproj|solutionrelative:gabrielshop\\adminlist.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0646F1CC-A6AB-44BD-B1C3-1F810A7342DE}|GabrielShop\\GabrielShop.csproj|e:\\\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\\u043C\u043E\u0434\u0443\u043B\u0438\\avalonia\\gabrielshop\\gabrielshop\\userlist.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0646F1CC-A6AB-44BD-B1C3-1F810A7342DE}|GabrielShop\\GabrielShop.csproj|solutionrelative:gabrielshop\\userlist.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0646F1CC-A6AB-44BD-B1C3-1F810A7342DE}|GabrielShop\\GabrielShop.csproj|e:\\\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\\u043C\u043E\u0434\u0443\u043B\u0438\\avalonia\\gabrielshop\\gabrielshop\\adminlist.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0646F1CC-A6AB-44BD-B1C3-1F810A7342DE}|GabrielShop\\GabrielShop.csproj|solutionrelative:gabrielshop\\adminlist.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0646F1CC-A6AB-44BD-B1C3-1F810A7342DE}|GabrielShop\\GabrielShop.csproj|e:\\\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\\u043C\u043E\u0434\u0443\u043B\u0438\\avalonia\\gabrielshop\\gabrielshop\\userlist.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0646F1CC-A6AB-44BD-B1C3-1F810A7342DE}|GabrielShop\\GabrielShop.csproj|solutionrelative:gabrielshop\\userlist.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminList.axaml.cs",
+              "DocumentMoniker": "E:\\\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\\u041C\u043E\u0434\u0443\u043B\u0438\\Avalonia\\GabrielShop\\GabrielShop\\AdminList.axaml.cs",
+              "RelativeDocumentMoniker": "GabrielShop\\AdminList.axaml.cs",
+              "ToolTip": "E:\\\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\\u041C\u043E\u0434\u0443\u043B\u0438\\Avalonia\\GabrielShop\\GabrielShop\\AdminList.axaml.cs",
+              "RelativeToolTip": "GabrielShop\\AdminList.axaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T18:36:30.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminList.axaml",
+              "DocumentMoniker": "E:\\\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\\u041C\u043E\u0434\u0443\u043B\u0438\\Avalonia\\GabrielShop\\GabrielShop\\AdminList.axaml",
+              "RelativeDocumentMoniker": "GabrielShop\\AdminList.axaml",
+              "ToolTip": "E:\\\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\\u041C\u043E\u0434\u0443\u043B\u0438\\Avalonia\\GabrielShop\\GabrielShop\\AdminList.axaml",
+              "RelativeToolTip": "GabrielShop\\AdminList.axaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-27T18:36:29.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserList.axaml.cs",
+              "DocumentMoniker": "E:\\\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\\u041C\u043E\u0434\u0443\u043B\u0438\\Avalonia\\GabrielShop\\GabrielShop\\UserList.axaml.cs",
+              "RelativeDocumentMoniker": "GabrielShop\\UserList.axaml.cs",
+              "ToolTip": "E:\\\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\\u041C\u043E\u0434\u0443\u043B\u0438\\Avalonia\\GabrielShop\\GabrielShop\\UserList.axaml.cs",
+              "RelativeToolTip": "GabrielShop\\UserList.axaml.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAwwDYAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T18:35:07.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserList.axaml",
+              "DocumentMoniker": "E:\\\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\\u041C\u043E\u0434\u0443\u043B\u0438\\Avalonia\\GabrielShop\\GabrielShop\\UserList.axaml",
+              "RelativeDocumentMoniker": "GabrielShop\\UserList.axaml",
+              "ToolTip": "E:\\\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\\u041C\u043E\u0434\u0443\u043B\u0438\\Avalonia\\GabrielShop\\GabrielShop\\UserList.axaml",
+              "RelativeToolTip": "GabrielShop\\UserList.axaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-27T18:35:03.353Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

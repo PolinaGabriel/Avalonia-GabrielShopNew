@@ -1,0 +1,194 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="960" d:DesignHeight="560"
+        x:Class="GabrielShop.AdminListWindow"
+		x:CompileBindings ="False"
+        Title="Добавление и удаление товаров"
+		MaxWidth="960" MaxHeight="560"
+		MinWidth="960" MinHeight="560">
+		<Grid
+			RowDefinitions="50 30 420 60">
+			<StackPanel
+			Grid.Row="0">
+				<Grid
+					ColumnDefinitions="420 170 120 220">
+					<TextBox
+						x:Name="requestA"
+						KeyUp="Search"
+						Grid.Column="0"
+						Width="410"
+						Margin="5"
+						FontSize="15"
+						Watermark="Найти товары"/>
+					<ComboBox
+						x:Name="sortPriceA"
+						SelectionChanged="Selection"
+						Grid.Column="1"
+						Width="170"
+						Margin="5"
+						FontSize="15"
+						HorizontalAlignment="Center"/>
+					<ComboBox
+						x:Name="sortCatA"
+						SelectionChanged="Selection"
+						Grid.Column="2"
+						Width="120"
+						Margin="5"
+						FontSize="15"
+						HorizontalAlignment="Center"/>
+					<ComboBox
+						x:Name="sortManA"
+						SelectionChanged="Selection"
+						Grid.Column="3"
+						Width="220"
+						Margin="5"
+						FontSize="15"
+						HorizontalAlignment="Left"/>
+				</Grid>
+			</StackPanel>
+			<StackPanel
+				Grid.Row="1">
+				<TextBlock
+					x:Name="numberA"
+					Margin="5"
+					FontSize="15"/>
+			</StackPanel>
+			<Border
+				Grid.Row="2"
+				Width="960"
+				Height="420">
+				<ScrollViewer>
+					<StackPanel>
+						<ListBox
+							x:Name="admShopList"
+							SelectionChanged="ModifyProduct">
+							<ListBox.ItemTemplate>
+								<DataTemplate>
+									<Border
+										Background="{Binding color}"
+										BorderBrush="Gray"
+										BorderThickness="1"
+										CornerRadius="4"
+										Padding="10">
+										<StackPanel>
+											<Grid
+												ColumnDefinitions="3* 9* 3* *">
+												<Image
+													Grid.Column="0"
+													Source="{Binding image}"
+													Margin="5"
+													Width="150"
+													Height="125">
+												</Image>
+												<Border
+													Grid.Column="1"
+													BorderBrush="Gray"
+													BorderThickness="1"
+													CornerRadius="0"
+													Padding="5"
+													Margin="5">
+													<WrapPanel
+														Orientation="Vertical">
+														<TextBlock
+															Text ="{Binding name}"
+															Margin="5"
+															FontSize="15"
+															FontWeight="Bold"
+															TextWrapping="Wrap">
+														</TextBlock>
+														<TextBlock
+															Text ="{Binding descr}"
+															Margin="5"
+															FontSize="15"
+															TextWrapping="Wrap">
+														</TextBlock>
+														<WrapPanel>
+															<TextBlock
+																Text ="Производитель:"
+																Margin="5"
+																FontSize="15"
+																TextWrapping="Wrap"/>
+															<TextBlock
+																Text ="{Binding man}"
+																Margin="5"
+																FontSize="15"
+																TextWrapping="Wrap"/>
+														</WrapPanel>
+														<WrapPanel>
+															<TextBlock
+																Text="Цена:"
+																Margin="5"
+																FontSize="15"/>
+															<TextBlock
+																Text="{Binding price}"
+																Margin="5"
+																FontSize="15"/>
+														</WrapPanel>
+													</WrapPanel>
+												</Border>
+												<Border
+													Grid.Column="2"
+													BorderBrush="Gray"
+													BorderThickness="1"
+													CornerRadius="0"
+													Padding="5"
+													Margin="5">
+													<WrapPanel
+														Orientation="Vertical"
+														HorizontalAlignment="Center">
+														<TextBlock
+															Text="На складе:"
+															Margin="5"
+															FontSize="20"/>
+														<TextBlock
+															Text="{Binding enable}"
+															Margin="5"
+															FontSize="20"
+															HorizontalAlignment="Center"/>
+													</WrapPanel>
+												</Border>
+												<WrapPanel
+													Grid.Column="3"
+													Orientation="Vertical"
+													HorizontalAlignment="Right">
+													<Button
+														Click="DeleteProduct"
+														Tag="{Binding id}"
+														Content="X"
+														Margin="5"
+														FontSize="20"/>
+												</WrapPanel>
+											</Grid>
+										</StackPanel>
+									</Border>
+								</DataTemplate>
+							</ListBox.ItemTemplate>
+						</ListBox>
+					</StackPanel>
+				</ScrollViewer>
+			</Border>
+			<WrapPanel
+				Grid.Row="3"
+				Background="LightGray">
+				<Grid
+					ColumnDefinitions="480 480">
+					<Button
+						Grid.Column="0"
+						Content="Добавить товар"
+						FontSize="20"
+						Click="AddProduct"
+						Margin="10"
+						HorizontalAlignment="Left"/>
+					<Button
+						Grid.Column="1"
+						Content="Сменить пользователя"
+						FontSize="20"
+						Click="ChangeUser"
+						Margin="10"
+						HorizontalAlignment="Right"/>
+				</Grid>
+			</WrapPanel>
+		</Grid>
+</Window>
